@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
 import { hero } from "@/constants/content";
 

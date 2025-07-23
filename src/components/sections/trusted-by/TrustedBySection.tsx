@@ -68,7 +68,7 @@ export default function TrustedBySection() {
                   marginBottom: spacing[3],
                 }}
               >
-                "
+                &quot;
               </div>
               <p
                 style={{
