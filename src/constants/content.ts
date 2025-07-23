@@ -13,7 +13,7 @@ export const partners = {
     { name: "Starbucks", logo: "/partners/starbucks.png" },
     { name: "Subway", logo: "/partners/subway.png" },
     { name: "KFC", logo: "/partners/kfc.png" },
-    { name: "Pizza Hut", logo: "/partners/pizza-hut.png" },
+    { name: "Pizza Hut", logo: "/partners/pizzahut.png" },
     { name: "Domino's", logo: "/partners/dominos.png" },
   ],
 };

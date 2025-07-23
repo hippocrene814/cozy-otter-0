@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { colors, spacing, typography } from "@/constants/design-system";
 import { partners } from "@/constants/content";
 
@@ -67,15 +68,14 @@ export default function PartnersCarousel() {
                 border: `1px solid ${colors.neutral.medium}`,
               }}
             >
-              <span
-                style={{
-                  fontSize: typography.fontSizes.sm,
-                  color: colors.neutral.dark,
-                  fontWeight: typography.fontWeights.medium,
-                }}
-              >
-                {brand.name}
-              </span>
+              <Image
+                src={brand.logo}
+                alt={brand.name + " logo"}
+                width={80}
+                height={40}
+                style={{ objectFit: "contain", maxHeight: 40, width: "auto" }}
+                priority={index < 3}
+              />
             </div>
           ))}
         </div>
