@@ -134,6 +134,28 @@ export const pricing = {
   ],
 };
 
+export const trustedBy = {
+  headline: 'Trusted by Businesses Worldwide',
+  subheadline: 'Join thousands of companies that have transformed their phone operations with CozyOtter.',
+  testimonials: [
+    {
+      quote: "CozyOtter has revolutionized how we handle phone orders. Our staff can focus on food preparation while the AI handles customer service seamlessly.",
+      author: "Sarah Chen",
+      role: "Owner, Bubble Tea Express",
+    },
+    {
+      quote: "The accuracy and speed of CozyOtter's order processing has increased our customer satisfaction and reduced errors by 95%.",
+      author: "Mike Rodriguez",
+      role: "Manager, Pizza Palace",
+    },
+    {
+      quote: "Setting up CozyOtter was incredibly easy. Within 24 hours, we were handling calls automatically. The ROI was immediate.",
+      author: "Lisa Thompson",
+      role: "CEO, Fresh Smoothies Co.",
+    },
+  ],
+};
+
 export const footer = {
   company: {
     name: 'CozyOtter',
