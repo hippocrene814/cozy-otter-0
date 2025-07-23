@@ -32,7 +32,7 @@ export default function NavigationBar() {
           <Link href="/pricing" style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
             Pricing
           </Link>
-          <Link href="#faq" style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
+          <Link href="/faq" style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
             FAQ
           </Link>
         </div>
