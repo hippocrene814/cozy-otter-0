@@ -1,6 +1,6 @@
 "use client";
 
-import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
+import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { pricing } from "@/constants/content";
 
 export default function PricingSection() {
@@ -60,7 +60,7 @@ export default function PricingSection() {
                 padding: spacing[6],
                 borderRadius: radii.lg,
                 boxShadow: shadows.lg,
-                border: `2px solid ${index === 1 ? colors.primary : colors.neutral.medium}`,
+                border: `${borderWidths.thick} solid ${index === 1 ? colors.primary : colors.neutral.medium}`,
                 position: "relative",
                 transform: index === 1 ? "scale(1.05)" : "scale(1)",
               }}
@@ -148,7 +148,7 @@ export default function PricingSection() {
                   borderRadius: radii.md,
                   fontSize: typography.fontSizes.base,
                   fontWeight: typography.fontWeights.medium,
-                  border: `2px solid ${colors.primary}`,
+                  border: `${borderWidths.thick} solid ${colors.primary}`,
                   cursor: "pointer",
                   transition: "all 0.2s ease",
                 }}

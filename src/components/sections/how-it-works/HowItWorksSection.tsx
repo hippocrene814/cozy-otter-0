@@ -1,4 +1,4 @@
-import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
+import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { howItWorks } from "@/constants/content";
 
 export default function HowItWorksSection() {
@@ -58,7 +58,7 @@ export default function HowItWorksSection() {
                 borderRadius: radii.lg,
                 boxShadow: shadows.md,
                 textAlign: "center",
-                border: `1px solid ${colors.neutral.medium}`,
+                border: `${borderWidths.thick} solid ${colors.neutral.medium}`,
               }}
             >
               <div

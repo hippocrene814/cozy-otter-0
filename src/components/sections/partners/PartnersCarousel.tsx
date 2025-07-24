@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { colors, spacing, typography } from "@/constants/design-system";
+import { colors, spacing, typography, borderWidths } from "@/constants/design-system";
 import { partners } from "@/constants/content";
 
 export default function PartnersCarousel() {
@@ -65,7 +65,7 @@ export default function PartnersCarousel() {
                 background: colors.neutral.light,
                 borderRadius: "16px",
                 padding: `${spacing[6]} ${spacing[4]}`,
-                border: `2px solid ${colors.neutral.medium}`,
+                border: `${borderWidths.thick} solid ${colors.neutral.medium}`,
                 position: "relative",
               }}
             >

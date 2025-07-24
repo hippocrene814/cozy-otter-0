@@ -1,4 +1,4 @@
-import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
+import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { hero } from "@/constants/content";
 
 export default function HeroSection() {
@@ -77,7 +77,7 @@ export default function HeroSection() {
                 borderRadius: radii.md,
                 fontSize: typography.fontSizes.base,
                 fontWeight: typography.fontWeights.medium,
-                border: `2px solid ${colors.primary}`,
+                border: `${borderWidths.thick} solid ${colors.primary}`,
                 cursor: "pointer",
               }}
               aria-label={hero.ctaSecondary}

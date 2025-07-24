@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { colors, spacing, typography } from "@/constants/design-system";
+import { colors, spacing, typography, borderWidths } from "@/constants/design-system";
 import { mainNav } from "@/constants/navigation";
 
 export default function NavigationBar() {
@@ -9,7 +9,7 @@ export default function NavigationBar() {
       style={{
         background: colors.neutral.light,
         padding: spacing[4],
-        borderBottom: `1px solid ${colors.neutral.medium}`,
+        borderBottom: `${borderWidths.thin} solid ${colors.neutral.medium}`,
         fontFamily: typography.fontFamily,
       }}
       aria-label="Main navigation"

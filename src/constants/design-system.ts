@@ -66,6 +66,12 @@ export const radii = {
   full: '9999px',
 };
 
+// Border widths
+export const borderWidths = {
+  thin: '1px',
+  thick: '2px',
+};
+
 // Breakpoints
 export const breakpoints = {
   sm: '640px',

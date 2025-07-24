@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
+import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { faq } from "@/constants/content";
 
 export default function FAQSection() {
@@ -77,7 +77,7 @@ export default function FAQSection() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
-                  borderBottom: openIndex === index ? `1px solid ${colors.neutral.medium}` : "none",
+                  borderBottom: openIndex === index ? `${borderWidths.thin} solid ${colors.neutral.medium}` : "none",
                 }}
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}

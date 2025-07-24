@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { colors, spacing, typography } from "@/constants/design-system";
+import { colors, spacing, typography, borderWidths } from "@/constants/design-system";
 import { footer } from "@/constants/content";
 import { mainNav } from "@/constants/navigation";
 
@@ -161,7 +161,7 @@ export default function FooterSection() {
       {/* Bottom Section */}
       <div
         style={{
-          borderTop: `1px solid ${colors.neutral.medium}`,
+          borderTop: `${borderWidths.thin} solid ${colors.neutral.medium}`,
           paddingTop: spacing[6],
           display: "flex",
           flexWrap: "wrap",

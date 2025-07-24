@@ -1,4 +1,4 @@
-import { colors, spacing, typography, radii, shadows } from "@/constants/design-system";
+import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { comparison } from "@/constants/content";
 
 export default function ComparisonSection() {
@@ -55,7 +55,7 @@ export default function ComparisonSection() {
               background: colors.neutral.light,
               padding: spacing[6],
               borderRadius: radii.lg,
-              border: `2px solid ${colors.neutral.medium}`,
+              border: `${borderWidths.thick} solid ${colors.neutral.medium}`,
             }}
           >
             <h3
@@ -107,7 +107,7 @@ export default function ComparisonSection() {
               background: colors.secondary,
               padding: spacing[6],
               borderRadius: radii.lg,
-              border: `2px solid ${colors.primary}`,
+              border: `${borderWidths.thick} solid ${colors.primary}`,
               boxShadow: shadows.lg,
             }}
           >
