@@ -45,7 +45,7 @@ export default function PartnersCarousel() {
         <div
           style={{
             display: "flex",
-            gap: spacing[8],
+            gap: spacing[3],
             alignItems: "center",
             justifyContent: "center",
             flexWrap: "wrap",
@@ -60,22 +60,34 @@ export default function PartnersCarousel() {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                minWidth: 120,
-                height: 60,
+                width: 180,
+                minHeight: 120,
                 background: colors.neutral.light,
-                borderRadius: "8px",
-                padding: spacing[4],
-                border: `1px solid ${colors.neutral.medium}`,
+                borderRadius: "16px",
+                padding: `${spacing[6]} ${spacing[4]}`,
+                border: `2px solid ${colors.neutral.medium}`,
+                position: "relative",
               }}
             >
-              <Image
-                src={brand.logo}
-                alt={brand.name + " logo"}
-                width={80}
-                height={40}
-                style={{ objectFit: "contain", maxHeight: 40, width: "auto" }}
-                priority={index < 3}
-              />
+              <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <Image
+                  src={brand.logo}
+                  alt={brand.name + " logo"}
+                  width={120}
+                  height={60}
+                  // update the logo tint color to be primary color
+                  style={{
+                    objectFit: "contain",
+                    maxWidth: "120px",
+                    maxHeight: "60px",
+                    width: "100%",
+                    height: "auto",
+                    filter: `sepia(1) saturate(2) hue-rotate(-20deg) brightness(0.7) drop-shadow(0 0 0 ${colors.primary})`,
+                    opacity: 0.7,
+                  }}
+                  priority={index < 3}
+                />
+              </div>
             </div>
           ))}
         </div>
