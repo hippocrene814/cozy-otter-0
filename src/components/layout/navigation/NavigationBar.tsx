@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { colors, spacing, typography } from "@/constants/design-system";
+import { mainNav } from "@/constants/navigation";
 
 export default function NavigationBar() {
   return (
@@ -29,12 +30,11 @@ export default function NavigationBar() {
           </span>
         </Link>
         <div style={{ display: "flex", gap: spacing[6] }}>
-          <Link href="/pricing" style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
-            Pricing
-          </Link>
-          <Link href="/faq" style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
-            FAQ
-          </Link>
+          {mainNav.map((item) => (
+            <Link key={item.href} href={item.href} style={{ color: colors.neutral.dark, fontSize: typography.fontSizes.base }}>
+              {item.label}
+            </Link>
+          ))}
         </div>
       </div>
     </nav>

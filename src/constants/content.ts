@@ -219,10 +219,12 @@ export const footer = {
     company: ['About', 'Blog', 'Careers', 'Contact'],
     support: ['Help Center', 'Documentation', 'Status', 'Contact Support'],
   },
-  social: {
-    twitter: 'https://twitter.com/cozyotter',
-    linkedin: 'https://linkedin.com/company/cozyotter',
-  },
+  social: [
+    { name: "GitHub", href: "https://github.com/", icon: "/social-logos/github.png" },
+    { name: "LinkedIn", href: "https://linkedin.com/company/cozyotter", icon: "/social-logos/linkedin.png" },
+    { name: "X", href: "https://x.com/", icon: "/social-logos/x.png" },
+    { name: "YouTube", href: "https://youtube.com/", icon: "/social-logos/youtube.png" },
+  ],
   legal: {
     privacy: '/privacy',
     terms: '/terms',
