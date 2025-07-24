@@ -94,6 +94,59 @@ export const faq = {
       question: 'Can I customize the voice and personality?',
       answer: 'Absolutely! You can customize the voice, tone, and personality to match your brand and create a consistent customer experience.',
     },
+    // Additional questions for SEO
+    {
+      question: 'How does CozyOtter integrate with my POS or ordering system?',
+      answer: 'CozyOtter supports integration with most major POS and ordering systems. Our team will work with you to ensure a seamless connection and data flow.',
+    },
+    {
+      question: 'Is my customer data secure with CozyOtter?',
+      answer: 'Yes, we use industry-standard encryption and follow best practices to ensure all customer data is secure and compliant with privacy regulations.',
+    },
+    {
+      question: 'What support options are available?',
+      answer: 'We offer email and live chat support for all plans, with priority and dedicated support available for Pro and Enterprise customers.',
+    },
+    {
+      question: 'Can I try CozyOtter before committing?',
+      answer: 'Yes, we offer a free trial so you can experience CozyOtter’s benefits before making a decision.',
+    },
+    {
+      question: 'How do I train CozyOtter to understand my menu or services?',
+      answer: 'During onboarding, you’ll provide your menu or service list, and our team will configure CozyOtter to accurately handle your specific offerings.',
+    },
+    {
+      question: 'What happens if CozyOtter cannot answer a customer’s question?',
+      answer: 'If CozyOtter encounters a question it cannot answer, it will escalate the call to a human staff member or provide a callback option, ensuring no customer is left without help.',
+    },
+    {
+      question: 'How do I update my business hours or menu?',
+      answer: 'You can update your business information anytime through your CozyOtter dashboard or by contacting our support team.',
+    },
+    {
+      question: 'Does CozyOtter support multiple locations?',
+      answer: 'Yes, CozyOtter can be configured to handle calls and orders for multiple locations, each with its own menu and settings.',
+    },
+    {
+      question: 'Is there a setup fee?',
+      answer: 'There is no setup fee for Starter and Pro plans. Enterprise customers may have a one-time onboarding fee depending on integration complexity.',
+    },
+    {
+      question: 'How do I cancel or change my plan?',
+      answer: 'You can manage your subscription and billing details directly from your CozyOtter dashboard at any time.',
+    },
+    {
+      question: 'What languages does CozyOtter support?',
+      answer: 'CozyOtter currently supports English and is expanding to additional languages soon. Contact us for specific language requests.',
+    },
+    {
+      question: 'Can CozyOtter handle both phone and online orders?',
+      answer: 'Yes, CozyOtter can process phone orders and can be integrated with your online ordering system for a unified experience.',
+    },
+    {
+      question: 'How do I get started with CozyOtter?',
+      answer: 'Simply sign up on our website, and our onboarding team will guide you through setup, integration, and training.',
+    },
   ],
 };
 

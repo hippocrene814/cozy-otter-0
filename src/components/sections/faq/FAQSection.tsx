@@ -77,6 +77,7 @@ export default function FAQSection() {
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
+                  borderBottom: openIndex === index ? `1px solid ${colors.neutral.medium}` : "none",
                 }}
                 aria-expanded={openIndex === index}
                 aria-controls={`faq-answer-${index}`}
@@ -107,8 +108,8 @@ export default function FAQSection() {
                 <div
                   id={`faq-answer-${index}`}
                   style={{
-                    padding: `0 ${spacing[4]} ${spacing[4]}`,
-                    borderTop: `1px solid ${colors.neutral.medium}`,
+                    padding: `${spacing[4]} ${spacing[4]}`,
+                    textAlign: "left",
                   }}
                 >
                   <p
