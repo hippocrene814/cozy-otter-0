@@ -24,22 +24,22 @@ export const howItWorks = {
     {
       title: 'Customer Calls',
       description: 'When a customer calls your business, CozyOtter answers with a friendly, professional greeting.',
-      icon: '📞',
+      icon: '/how-it-works/phone.svg',
     },
     {
       title: 'AI Processing',
       description: 'Our advanced AI understands orders, answers questions, and handles customer inquiries in real-time.',
-      icon: '🤖',
+      icon: '/how-it-works/bot.svg',
     },
     {
       title: 'Order Management',
       description: 'Orders are automatically processed and sent to your POS system or kitchen display.',
-      icon: '📋',
+      icon: '/how-it-works/order.svg',
     },
     {
       title: 'Seamless Integration',
       description: 'Everything integrates with your existing systems, so there\'s no disruption to your workflow.',
-      icon: '🔗',
+      icon: '/how-it-works/block.svg',
     },
   ],
 };

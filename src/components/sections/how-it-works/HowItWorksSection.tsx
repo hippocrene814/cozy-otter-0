@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { colors, spacing, typography, radii, shadows, borderWidths } from "@/constants/design-system";
 import { howItWorks } from "@/constants/content";
 
@@ -63,11 +64,21 @@ export default function HowItWorksSection() {
             >
               <div
                 style={{
-                  fontSize: "48px",
                   marginBottom: spacing[4],
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  height: 56,
                 }}
               >
-                {step.icon}
+                <Image
+                  src={step.icon}
+                  alt={step.title + " icon"}
+                  width={48}
+                  height={48}
+                  style={{ objectFit: "contain", width: 48, height: 48 }}
+                  priority={index < 2}
+                />
               </div>
               <h3
                 style={{
