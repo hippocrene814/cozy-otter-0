@@ -104,17 +104,35 @@ export default function HeroSection() {
               alignItems: "center",
               justifyContent: "center",
               boxShadow: shadows.lg,
+              overflow: "hidden",
+              position: "relative",
             }}
           >
-            <span
+            <video
+              src="/hero-video-3.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
               style={{
-                fontSize: typography.fontSizes.lg,
-                color: colors.neutral.dark,
-                textAlign: "center",
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                borderRadius: radii.lg,
+                display: "block",
               }}
-            >
-              Hero Image Placeholder
-            </span>
+            />
+            <div
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                background: "rgba(255,255,255,0.15)",
+                pointerEvents: "none",
+              }}
+            />
           </div>
         </div>
       </div>
